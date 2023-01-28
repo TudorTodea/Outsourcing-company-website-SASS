@@ -1,6 +1,7 @@
 @use 'config';
 @use 'home';
 @use 'menu';
+@use 'about';
 body{
     background:config.$primary-color;
     color:config.set-text-color(config.$primary-color);
@@ -16,6 +17,10 @@ h1,h2,h3{
 a{
     color:config.set-text-color(config.$primary-color);;
     text-decoration: none;
+}
+
+.text-secondary{
+    color:config.$secondary-color;
 }
 header{
     position:fixed;
