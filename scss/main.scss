@@ -3,8 +3,8 @@
 @use 'menu';
 @use 'about';
 body{
-    background:config.$primary-color;
-    color:config.set-text-color(config.$primary-color);
+    background:config.$white-gray-color;
+    color:config.set-text-color(config.$secondary-color);
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
@@ -15,7 +15,7 @@ h1,h2,h3{
 }
 
 a{
-    color:config.set-text-color(config.$primary-color);;
+    color:config.set-text-color(config.$secondary-color);;
     text-decoration: none;
 }
 

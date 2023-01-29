@@ -116,6 +116,7 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
+  color: #fff;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -145,10 +146,14 @@
 .about {
   padding-bottom: 2rem;
 }
+.about .container {
+  width: 80vw;
+  margin: 2rem auto 0 auto;
+}
 .about__bio-image {
-  height: 50vh;
+  height: 70vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/hero-1.jpg") center top;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.95), transparent), url("../img/about1.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -159,23 +164,36 @@
   margin-bottom: 2rem;
 }
 .about__bio {
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
+  font-size: 4rem;
 }
 .about .jobs {
-  width: 60vw;
+  width: 80vw;
   margin: 2rem auto 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  gap: 1rem;
 }
-.about .jobs__job {
-  background: #414141;
-  padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+.about .jobs__job .job-img {
+  height: 70vh;
+  background: url("../img/about-3.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about .jobs__job .job-text {
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.about .jobs__job h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.5rem 0;
@@ -183,17 +201,50 @@
 .about .jobs__job h6 {
   margin: 0.3rem 0;
 }
+@media (min-width: 1200px) {
+  .about .jobs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .about .social-icons {
   display: flex;
   flex-direction: column;
+}
+.about .works {
+  width: 80vw;
+  margin: 5rem auto 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+.about .works__work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.about .works h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about .works p {
+  margin: 0 0 0 5rem;
+  font-weight: 300;
+}
+@media (min-width: 1200px) {
+  .about .works {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .about footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 body {
-  background: #272727;
-  color: #fff;
+  background: #fff;
+  color: #000;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
@@ -204,7 +255,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 

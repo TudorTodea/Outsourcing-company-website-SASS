@@ -99,6 +99,7 @@
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: 300;
+      color: config.$white-gray-color;
       @include config.transition-ease;
       
       &:hover{
