@@ -2,6 +2,7 @@
 @use 'home';
 @use 'menu';
 @use 'about';
+@use 'services';
 body{
     background:config.$white-gray-color;
     color:config.set-text-color(config.$secondary-color);

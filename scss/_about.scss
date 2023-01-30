@@ -1,7 +1,6 @@
 @use 'config';
 .about {
     padding-bottom: 2rem;
-    
     .container{
       width: 80vw;
       margin: 2rem auto 0 auto;
@@ -11,7 +10,7 @@
       height: 70vh;
       width: 100%;
       background: 
-      linear-gradient(to top  right, rgba(0,0,0,0.95),transparent),
+     
         url('../img/about1.jpg') center top;
       background-size: cover;
       display: flex;
@@ -121,7 +120,8 @@
     footer {
       transform:
         rotate(90deg)
-        translate(-3rem, -5rem);
+        translate(-3rem, -2rem);
+        color: config.$primary-color;
     }
     
   }

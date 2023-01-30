@@ -15,7 +15,7 @@
         top: 0.5rem;
         width: 28px;
         height: 3px;
-        background: config.set-text-color(config.$primary-color);
+        background: config.set-text-color(config.$secondary-color);
         @include config.transition-ease;
     
         &::before {
@@ -24,7 +24,7 @@
           top: -8px;
           width: 28px;
           height: 3px;
-          background: config.set-text-color(config.$primary-color);
+          background: config.set-text-color(config.$secondary-color);
           @include config.transition-ease;
         }
     
@@ -34,7 +34,7 @@
           top: 8px;
           width: 20px;
           height: 3px;
-          background: config.set-text-color(config.$primary-color);
+          background: config.set-text-color(config.$secondary-color);
           @include config.transition-ease;
         }
 
@@ -72,7 +72,7 @@
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background: config.$primary-color;
+    background: config.$white-gray-color;
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
@@ -99,7 +99,7 @@
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: 300;
-      color: config.$white-gray-color;
+      color: config.$primary-color;
       @include config.transition-ease;
       
       &:hover{
