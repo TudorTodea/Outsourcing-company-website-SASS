@@ -14,6 +14,7 @@
     background-size: cover;
 
     &__name{
+        color: config.$white-gray-color;
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;

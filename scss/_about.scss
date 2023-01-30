@@ -79,24 +79,33 @@
       display: flex;
       flex-direction: column;
     }
+    .title{
+      margin-top: 5rem;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: config.$secondary-color;
+    }
     .works {
       width: 80vw;
-      margin: 5rem auto 0 auto;
+      margin: 3rem auto 0 auto;
       display: grid;
       gap: 1rem;
 
   &__work{
     display: flex;
     flex-direction: column;
-
     justify-content: flex-end;
+
+    &-container{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
       h1{
         font-size: 2rem;
         font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         width: 100%;
       }
       p{

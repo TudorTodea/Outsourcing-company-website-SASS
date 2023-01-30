@@ -14,6 +14,7 @@
   background-size: cover;
 }
 .home__name {
+  color: #fff;
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -210,9 +211,15 @@
   display: flex;
   flex-direction: column;
 }
+.about .title {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #ff652f;
+}
 .about .works {
   width: 80vw;
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   display: grid;
   gap: 1rem;
 }
@@ -221,12 +228,14 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+.about .works__work-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .about .works h1 {
   font-size: 2rem;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 .about .works p {
