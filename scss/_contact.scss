@@ -1,0 +1,30 @@
+@use 'config';
+.contact {
+    height: 100%;
+    padding-top: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:config.$white-gray-color; 
+    h1{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 3rem;
+    
+    }
+  
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .social-icons {
+     padding-right: 50px;
+      margin-top: 2rem;
+    }
+  }

@@ -3,6 +3,7 @@
 @use 'menu';
 @use 'about';
 @use 'services';
+@use 'contact';
 body{
     background:config.$white-gray-color;
     color:config.set-text-color(config.$secondary-color);
