@@ -4,6 +4,7 @@
 @use 'about';
 @use 'services';
 @use 'contact';
+@use 'careers';
 body{
     background:config.$white-gray-color;
     color:config.set-text-color(config.$secondary-color);
@@ -52,3 +53,21 @@ footer{
     padding: 1rem;
     color:config.set-text-color(config.$primary-color);;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
